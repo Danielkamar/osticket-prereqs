@@ -18,34 +18,102 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- Install / Enable IIS in Windows With CGI and Common HTTP Features
+- Install PHP Manager for IIS 
+- Install Rewrite Module
+- Create the directory C:\PHP
+- Install PHP
+- Install Visual C++ Redistributable
+- Install MySQL
+- Register PHP from within IIS
+- Install Osticket
+- Open Osticket installer on web
+- Enable Extensions
+- Assigning permission to ost-config php
 
+  
 <h2>Installation Steps</h2>
-Open Control panel and check the CGI Box under Internet Information Service
-<p>
-<[img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"](https://i.imgur.com/wJIHZWm.png)/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
 <br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
+Open Control panel, go to windows features 
+Then check the CGI Box under Internet Information Service, the IIS Mangement Console under Web Management Tools and check all the Boxes Under the Common HTTP features
 <br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
 <br />
+<img src="https://i.imgur.com/f4kDlSg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+Download and Install PHP Manager
+<br />
+<br />
+<img src="https://i.imgur.com/3hTB0ze.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+Download and Install Rewrite Module
+<br />
+<br />
+<img src="https://i.imgur.com/1SVp67b.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+Create a folder and name it PHP in C:
+<br />
+<br />
+<img src="https://i.imgur.com/hCi7QLn.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+Download PHP 7.3.8 and unzip it into C:\PHP
+<br />
+<br />
+<img src="https://i.imgur.com/SOCVAhR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+Download and Install VC_redist.x86.exe
+<br />
+<br />
+<img src="https://i.imgur.com/fSdRIqW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+Download and Install MySQL 5.5.62. Also create a memorable password during installation.
+<br />
+<br />
+<img src="https://i.imgur.com/Nn0vFoA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+Open IIS as admin, double click on PHP Manager. Click on Register New PHP Version, navigate to PHP folder and choose the cgi file.  
+ Lastly, click the restart button to make sure the changes registers. 
+<br />
+<br />
+<img src="https://i.imgur.com/K3PwCnc.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+After downloading Osticket, copy the upload folder and paste it in C:\ineptpub\wwwroot. Then rename the upload folder in C:\ineptpub\wwwroot to Osticket 
+<br />
+<br />
+<img src="https://i.imgur.com/bZ5CgMZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+Open IIS as admin again, Go to sites -> Default -> osTicket then click on browse 80 at the right.
+<br />
+<br />
+<img src="https://i.imgur.com/s8ZzYVJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+Open IIS again, go to IIS, sites -> Default -> osTicket, double click on PHP Manager. Enable the following extensions:  php_imap.dll, php_intl.dll, and php_opcache.dll. Then click on the restart button.
+<br />
+<br />
+<img src="https://i.imgur.com/V6la17T.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+Go to : C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php, rename ost-sampleconfig.php as ost-config.php. Then give all permission on ost-config.php to everyone.
+<br />
+<br />
+<img src="https://i.imgur.com/IBnpEax.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
