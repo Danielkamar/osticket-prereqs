@@ -29,7 +29,10 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Install Osticket
 - Open Osticket installer on web
 - Enable Extensions
-- Assigning permission to ost-config php
+- Assign permission to ost-config php
+- Install Heidi SQL and create a database
+- Finish setup on osticket web installer
+- Cleanup
 
   
 <h2>Installation Steps</h2>
@@ -117,3 +120,25 @@ Go to : C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php, rename ost-sam
 <br />
 <br />
 <img src="https://i.imgur.com/IBnpEax.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+Download and Install Heidi SQL, Create a new session; username is root and password is the same as the password you set for SQL. After creating a session, create a database and name it osticket
+<br />
+<br />
+<img src="https://i.imgur.com/z11yUE1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+Go back to Osticket web installer and fill in all the missing boxes. Congratulations osticket has been successfully installed. 
+<br />
+<br />
+<img src="https://i.imgur.com/AKXXfK6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+Delete C:\inetpub\wwwroot\osTicket\setup and change the permission on C:\inetpub\wwwroot\osTicket\include\ost-config.php to read only
+<br />
+<br />
+
+
