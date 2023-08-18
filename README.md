@@ -41,7 +41,7 @@ Open Control panel, go to windows features
 Then check the CGI Box under Internet Information Service, the IIS Mangement Console under Web Management Tools and check all the Boxes Under the Common HTTP features
 <br />
 <br />
-<img src="https://i.imgur.com/f4kDlSg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/BBWZGOz.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
